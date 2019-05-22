@@ -166,6 +166,8 @@
     <Compile Include="Controllers\CausesController.cs" />
     <Compile Include="Controllers\FAQsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Malaria_Risk_ZoneController.cs" />
+    <Compile Include="Controllers\Post_UpdateController.cs" />
     <Compile Include="Controllers\SymptomsController.cs" />
     <Compile Include="Controllers\TreatmentsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

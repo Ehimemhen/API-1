@@ -109,16 +109,6 @@
     <Property Name="Sign_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="About_Malaria" Relationship="Self.FK__Symptom__About_M__1CF15040" FromRole="Symptom" ToRole="About_Malaria" />
   </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <EntityType Name="Treatment">
     <Key>
       <PropertyRef Name="Treatment_ID" />
@@ -292,7 +282,6 @@
     <EntitySet Name="Publications" EntityType="Self.Publication" />
     <EntitySet Name="Statistics" EntityType="Self.Statistic" />
     <EntitySet Name="Symptoms" EntityType="Self.Symptom" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="Treatments" EntityType="Self.Treatment" />
     <EntitySet Name="Users" EntityType="Self.User" />
     <EntitySet Name="User_Role" EntityType="Self.User_Role" />
