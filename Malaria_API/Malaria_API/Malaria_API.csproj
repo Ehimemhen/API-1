@@ -164,6 +164,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\About_MalariaController.cs" />
     <Compile Include="Controllers\CausesController.cs" />
+    <Compile Include="Controllers\FAQsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SymptomsController.cs" />
     <Compile Include="Controllers\TreatmentsController.cs" />
