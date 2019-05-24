@@ -165,6 +165,7 @@
     <Compile Include="Controllers\About_MalariaController.cs" />
     <Compile Include="Controllers\CausesController.cs" />
     <Compile Include="Controllers\FAQsController.cs" />
+    <Compile Include="Controllers\HelplineController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Malaria_Risk_ZoneController.cs" />
     <Compile Include="Controllers\Post_UpdateController.cs" />
@@ -305,6 +306,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Helpline\" />
     <Folder Include="Views\Statistics\" />
   </ItemGroup>
   <ItemGroup>
