@@ -1,0 +1,34 @@
+﻿@model MalariaBackend.Models.Prevention
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prevention</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Prevention_Method)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prevention_Method)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.About_Malaria.Malaria_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.About_Malaria.Malaria_Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Prevention_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

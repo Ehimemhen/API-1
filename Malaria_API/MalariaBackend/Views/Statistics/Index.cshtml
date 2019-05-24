@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MalariaBackend.Models.Statistic>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Malaria_Case)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Malaria_Incidence)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Malaria_Mortality_Percentage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.About_Malaria.Malaria_Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Malaria_Case)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Malaria_Incidence)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Malaria_Mortality_Percentage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.About_Malaria.Malaria_Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Statistic_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Statistic_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Statistic_ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MalariaBackend.Models.Malaria_Risk_Zone>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Risk_Zone_Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Risk_Zone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Severity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.About_Malaria.Malaria_Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Risk_Zone_Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Risk_Zone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Severity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.About_Malaria.Malaria_Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Malaria_Risk_Zone_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Malaria_Risk_Zone_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Malaria_Risk_Zone_ID })
+        </td>
+    </tr>
+}
+
+</table>

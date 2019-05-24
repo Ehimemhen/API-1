@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MalariaBackend.Models.Help_Line>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Help_Line_Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Help_Line_Practioner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.About_Malaria.Malaria_Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Help_Line_Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Help_Line_Practioner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.About_Malaria.Malaria_Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Help_Line_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Help_Line_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Help_Line_ID })
+        </td>
+    </tr>
+}
+
+</table>
