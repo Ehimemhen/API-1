@@ -51,7 +51,7 @@ namespace Malaria_API.Controllers
             return dynamicHelpline;
         }
 
-        //get:api/helpline
+       // get:api/helpline
 
         //    public IQueryable<Help_Line> GetHelpline()
         //{
